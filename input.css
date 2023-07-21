@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    color: theme('colors.white');
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: theme('colors.black');
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 3rem;
+}
+
+a {
+    color: theme('colors.sky.500');
+    font-weight: bold;
+    padding: theme("spacing.1");
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: theme('colors.sky.500');
+    color: theme("colors.white");
+}
+
+p {
+    margin-bottom: theme('spacing.4')
+}
+
+.wp-caption,
+.wp-embedded-content ,iframe{
+    max-width: 100%;
+}
+
+h1 {
+    font-size: theme('fontSize.4xl');
+}
+
+h2 {
+    font-size: theme('fontSize.3xl');
+}
+
+h3 {
+    font-size: theme('fontSize.2xl');
+}
+
+h4 {
+    font-size: theme('fontSize.xl');
+}
+
+h4 {
+    font-size: theme('fontSize.base');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bolder;
+}
+
+code {
+    background-color: theme("colors.sky.100");
+}
+
+blockquote {
+    background-color: theme("colors.sky.300");
+    color: theme("colors.white");
+    font-size: theme("fontSize.xl");
+    padding: 1rem 0 1rem 0;
+    margin: 1rem 0;
+}
+
+li {
+    padding: 0.2rem 0;
+    margin-left: 2rem;
+}
+
+ul,ol {
+    list-style-type: decimal;
+}
