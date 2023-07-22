@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 <div class="flex flex-col sm:flex-row justify-center sm:flex-wrap md:flex-nowrap bg-slate-50 p-2">
-    <!-- Barra izquierda en dispositivos grandes -->
-    <div id="sidebar-left" class="md:w-1/4 sm:w-full  order-1 sm:order-2 ">
 
-    </div>
+    <?php get_sidebar("left") ?>
 
     <div class="flex-grow px-2 md:order-2 sm:order-1 sm:w-1/3 container">
         <h1 class="font-bold text-center"><?php bloginfo("name") ?></h1>
@@ -26,9 +24,7 @@
         <?php endif; ?>
     </div>
 
-    <div id="sidebar-right" class="md:w-1/4 sm:w-full order-3">
-
-    </div>
+    <?php get_sidebar("right") ?>
 </div>
 
 <?php get_footer(); ?>

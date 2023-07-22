@@ -18,7 +18,7 @@ function theme_widgets_init()
     // Área de widget izquierda
     register_sidebar(array(
         'name'          => 'Barra lateral izquierdaa',
-        'id'            => 'sidebar-left',
+        'id'            => 'left',
         'description'   => 'Esta es la barra lateral izquierda.',
         'before_widget' => '<div class="widget">',
         'after_widget'  => '</div>',
@@ -29,7 +29,7 @@ function theme_widgets_init()
     // Área de widget derecha
     register_sidebar(array(
         'name'          => 'Barra lateral derecha',
-        'id'            => 'sidebar-right',
+        'id'            => 'right',
         'description'   => 'Esta es la barra lateral derecha.',
         'before_widget' => '<div class="widget">',
         'after_widget'  => '</div>',
