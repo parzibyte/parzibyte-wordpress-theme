@@ -29,7 +29,7 @@ function theme_widgets_init()
         'name'          => 'Barra lateral izquierdaa',
         'id'            => 'left',
         'description'   => 'Esta es la barra lateral izquierda.',
-        'before_widget' => '<div class="widget">',
+        'before_widget' => '<div class="tarjeta">',
         'after_widget'  => '</div>',
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
@@ -40,7 +40,7 @@ function theme_widgets_init()
         'name'          => 'Barra lateral derecha',
         'id'            => 'right',
         'description'   => 'Esta es la barra lateral derecha.',
-        'before_widget' => '<div class="widget">',
+        'before_widget' => '<div class="tarjeta">',
         'after_widget'  => '</div>',
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
@@ -91,3 +91,7 @@ function disable_embeds_rewrites($rules) {
     }
     return $rules;
 }
+function my_deregister_scripts(){
+ wp_dequeue_script( 'wp-embed' );
+}
+add_action( 'wp_footer', 'my_deregister_scripts' );

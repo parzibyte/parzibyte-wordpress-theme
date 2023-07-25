@@ -10,10 +10,16 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <h1 class="font-bold text-center">
+        <a href="<?php echo get_site_url() ?>">
+            <?php bloginfo("name") ?>
+    </h1>
+    </a>
+    <p class="text-center"><?php bloginfo("description") ?></p>
     <header class="site-header">
         <?php wp_nav_menu(array(
             'theme_location' => 'header-menu',
             'container' => 'nav',
-            "menu_class" => "border border-gray-500 justify-center font-medium flex flex-col p-4  mt-4  rounded-lg  md:flex-row md:space-x-8 md:mt-0 bg-white"
+            "menu_class" => "justify-end border font-medium flex flex-col p-4  mt-4  md:flex-row md:space-x-8 md:mt-0 bg-white"
         )); ?>
     </header>
