@@ -6,6 +6,16 @@
             get_template_part("post", "content");
         endwhile; ?>
         <hr class="border border-gray-950">
+        <?php get_template_part("post-tags-and-categories"); ?>
+        <div class="flex flex-col md:flex-row my-2">
+            <div class="md:w-1/2">
+                <?php previous_post_link('&laquo; %link'); ?>
+            </div>
+            <div class="md:w-1/2 flex justify-end items-center">
+                <?php next_post_link('%link &raquo;'); ?>
+            </div>
+        </div>
+        <hr class="border border-gray-950">
         <?php
         // If comments are open or we have at least one comment, load up the comment template.
         if (comments_open() || get_comments_number()) :

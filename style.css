@@ -551,8 +551,17 @@ video {
   order: 3;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -569,6 +578,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-end {
@@ -603,6 +616,10 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-2 {
@@ -770,8 +787,51 @@ blockquote {
   padding: 1rem;
 }
 
-.comment img{
+.comment img {
   margin-bottom: 1rem;
+}
+
+.post-categories {
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+.post-categories li {
+  list-style: none;
+  display: inline;
+  margin: 0;
+}
+
+.post-categories a {
+  background-color: #38bdf8;
+  color: white;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+.post-categories a:hover {
+  background-color: #0ea5e9;
+  border-radius: 0.25rem;
+}
+
+.post-tags {
+  margin: 0.25rem 0 0.25rem 0;
+}
+
+.post-tags a::before {
+  content: "#";
+}
+
+.post-tags a {
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+  color: white;
+  text-decoration: none;
+  background-color: #34d399;
+  margin: 0.15rem;
+}
+
+.post-tags a:hover {
+  background-color: #10b981;
 }
 
 @media (min-width: 640px) {
@@ -807,6 +867,10 @@ blockquote {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-1\/4 {
