@@ -560,10 +560,6 @@ video {
   margin-top: 1rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .block {
   display: block;
 }
@@ -616,10 +612,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .px-2 {
@@ -752,22 +744,24 @@ blockquote {
   font-weight: bolder;
 }
 
-.comment-form input[type="submit"] {
+[type="submit"] {
   background-color: #0ea5e9;
   color: white;
   border-radius: 0.5rem;
   padding: 0.5rem;
   border: none;
+  margin: 0.25rem;
 }
 
-.comment-form input[type="submit"]:hover,
-.comment-form input[type="submit"]:focus {
+[type="submit"]:hover,
+[type="submit"]:focus {
   cursor: pointer;
   background-color: #0284c7;
 }
 
-.comment-form textarea,
-.comment-form input {
+textarea,
+input[type="text"],
+input[type="search"] {
   max-width: 100%;
   border: 0.1rem solid black;
   border-radius: 0.5rem;
@@ -806,6 +800,7 @@ blockquote {
   color: white;
   border-radius: 0.25rem;
   text-decoration: none;
+  display: inline-block;
 }
 
 .post-categories a:hover {
@@ -815,6 +810,7 @@ blockquote {
 
 .post-tags {
   margin: 0.25rem 0 0.25rem 0;
+  padding-top: 1rem;
 }
 
 .post-tags a::before {
@@ -828,6 +824,7 @@ blockquote {
   text-decoration: none;
   background-color: #34d399;
   margin: 0.15rem;
+  display: inline-block;
 }
 
 .post-tags a:hover {

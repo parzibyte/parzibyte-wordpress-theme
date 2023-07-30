@@ -23,7 +23,7 @@ function theme_widgets_init()
 {
     // Área de widget izquierda
     register_sidebar(array(
-        'name'          => 'Barra lateral izquierdaa',
+        'name'          => 'Barra lateral izquierda',
         'id'            => 'left',
         'description'   => 'Esta es la barra lateral izquierda.',
         'before_widget' => '<div class="tarjeta">',
