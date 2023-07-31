@@ -13,7 +13,7 @@ if (post_password_required()) {
                     'Un pensamiento en "%2$s"',
                     '%1$s pensamientos en "%2$s"',
                     get_comments_number(),
-                    'comments title',
+                    'comments title'
                 ),
                 number_format_i18n(get_comments_number()),
                 '<span>' . get_the_title() . '</span>'
