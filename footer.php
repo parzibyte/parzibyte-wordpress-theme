@@ -12,3 +12,6 @@
         <p class="text-center">Proudly brought to you by <a href="https://parzibyte.me/blog">Parzibyte</a> &copy; <?php echo date('Y'); ?></p>
     </div>
 </footer>
+<?php wp_footer(); ?>
+</body>
+</html>
