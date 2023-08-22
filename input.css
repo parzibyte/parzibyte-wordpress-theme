@@ -156,7 +156,7 @@ input[type="search"] {
     height: 2rem;
 }
 
-.comment {
+.comment :not(code .comment) {
     background-color: theme("colors.white");
     border-radius: 0.25rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
