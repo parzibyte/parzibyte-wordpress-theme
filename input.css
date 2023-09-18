@@ -142,6 +142,11 @@ blockquote {
     background-color: theme("colors.sky.600");
 }
 
+[type="submit"]:disabled {
+    background-color: theme("colors.gray.300");
+    color: theme("colors.white");
+}
+
 textarea,
 input[type="text"],
 input[type="search"] {
