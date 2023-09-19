@@ -161,7 +161,7 @@ input[type="search"] {
     height: 2rem;
 }
 
-.comment :not(code .comment) {
+.comment-list .comment {
     background-color: theme("colors.white");
     border-radius: 0.25rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -184,6 +184,7 @@ input[type="search"] {
 }
 
 .post-categories a {
+    text-transform: capitalize;
     background-color: theme("colors.sky.400");
     color: white;
     border-radius: 0.25rem;
