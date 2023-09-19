@@ -837,6 +837,25 @@ input[type="search"] {
   background-color: #10b981;
 }
 
+.pagination{
+  text-align: center;
+  border-top: 1px solid #bae6fd;
+  border-bottom: 1px solid #bae6fd;
+  padding: 1rem;
+}
+
+.page-numbers{
+  font-size: 1.2rem;
+  color: #0ea5e9;
+  background-color:white;
+  padding: 0.4rem 0.5rem;
+}
+
+.page-numbers.current, .page-numbers:hover{
+  background-color: #0ea5e9;
+  color:white;
+}
+
 @media (min-width: 640px) {
   .sm\:order-1 {
     order: 1;

@@ -10,6 +10,9 @@
         <?php else : ?>
             <p>No se encontraron posts.</p>
         <?php endif; ?>
+        <div class="pagination">
+            <?php echo paginate_links(); ?>
+        </div>
     </div>
     <?php get_sidebar("right") ?>
 </div>

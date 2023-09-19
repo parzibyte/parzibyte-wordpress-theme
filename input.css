@@ -219,3 +219,22 @@ input[type="search"] {
 .post-tags a:hover {
     background-color: theme("colors.emerald.500");
 }
+
+.pagination{
+    text-align: center;
+    border-top: 1px solid theme("colors.sky.200");
+    border-bottom: 1px solid theme("colors.sky.200");
+    padding: 1rem;
+}
+
+.page-numbers{
+    font-size: 1.2rem;
+    color: theme("colors.sky.500");
+    background-color:white;
+    padding: 0.4rem 0.5rem;
+}
+
+.page-numbers.current, .page-numbers:hover{
+    background-color: theme("colors.sky.500");
+    color:white;
+}

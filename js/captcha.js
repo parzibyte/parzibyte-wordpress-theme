@@ -2,12 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
     let isLoaded = false;
     let isLoading = false;
     let originalContent = "";
+    const commentForm = document.querySelector("#commentform");
+    if (!commentForm) {
+        return;
+    }
     window.onCaptchaLoadedCallback = () => {
         isLoaded = true;
         submit.value = originalContent;
         submit.disabled = false;
     }
-    const commentForm = document.querySelector("#commentform");
     const submit = commentForm.querySelector("#submit");
     submit.disabled = true;
     commentForm.querySelector("#comment").setAttribute("maxlength", 255);
