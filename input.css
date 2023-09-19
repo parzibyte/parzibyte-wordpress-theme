@@ -222,8 +222,8 @@ input[type="search"] {
 
 .pagination{
     text-align: center;
-    border-top: 1px solid theme("colors.sky.200");
-    border-bottom: 1px solid theme("colors.sky.200");
+    border-top: 1px solid theme("colors.gray.200");
+    border-bottom: 1px solid theme("colors.gray.200");
     padding: 1rem;
 }
 
