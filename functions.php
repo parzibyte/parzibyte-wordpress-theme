@@ -145,8 +145,21 @@ function verificarToken($token, $claveSecreta)
     # Regresamos ese valor, y listo (sí, ya sé que se podría regresar $resultado->success)
     return $pruebaPasada;
 }
+function is_comment_by_admin()
+{
+    $current_user = wp_get_current_user();
+
+    if (in_array('administrator', (array) $current_user->roles)) {
+        return true;
+    }
+    return false;
+}
+
 function procesar_campo_oculto($comment_data)
 {
+    if (is_comment_by_admin()) {
+        return $comment_data;
+    }
     if (mb_strlen($comment_data["comment_content"]) > 255) {
         wp_die("Comment too long");
     }
