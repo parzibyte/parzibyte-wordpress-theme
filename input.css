@@ -43,7 +43,6 @@ a:hover,
 
 p {
     margin-bottom: theme('spacing.4');
-    margin-top: theme('spacing.4');
     font-size: theme("fontSize.xl");
     color: theme("colors.gray.700");
 }
@@ -190,6 +189,8 @@ input[type="search"] {
     border-radius: 0.25rem;
     text-decoration: none;
     display: inline-block;
+    margin-bottom: theme("spacing.1");
+    overflow-wrap: break-word;
 }
 
 .post-categories a:hover {
@@ -220,21 +221,22 @@ input[type="search"] {
     background-color: theme("colors.emerald.500");
 }
 
-.pagination{
+.pagination {
     text-align: center;
     border-top: 1px solid theme("colors.gray.200");
     border-bottom: 1px solid theme("colors.gray.200");
     padding: 1rem;
 }
 
-.page-numbers{
+.page-numbers {
     font-size: 1.2rem;
     color: theme("colors.sky.500");
-    background-color:white;
+    background-color: white;
     padding: 0.4rem 0.5rem;
 }
 
-.page-numbers.current, .page-numbers:hover{
+.page-numbers.current,
+.page-numbers:hover {
     background-color: theme("colors.sky.500");
-    color:white;
+    color: white;
 }
